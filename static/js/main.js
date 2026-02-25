@@ -110,7 +110,7 @@ document.getElementById('daftarForm').addEventListener('submit', function (e) {
     (keluhan ? `📝 Keluhan: ${keluhan}` : '')
   );
 
-  window.open(`https://wa.me/6281234567890?text=${msg}`, '_blank');
+  window.open(`https://wa.me/6285363281138?text=${msg}`, '_blank');
 });
 
 // ---- Scroll Animations ----
@@ -143,3 +143,4 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
