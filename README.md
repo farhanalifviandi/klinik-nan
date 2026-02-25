@@ -88,4 +88,32 @@ Chatbot di website ini menjawab pertanyaan otomatis. Untuk meneruskan ke WhatsAp
 | Nama, alamat, nomor | `templates/index.html` |
 | Warna tema | `static/css/style.css` (variabel `:root`) |
 | Jawaban chatbot | `app.py` → fungsi `chatbot_response()` |
+
 | Nomor WhatsApp | `templates/index.html` & `static/js/main.js` |
+
+
+
+gunakan code ini pada file vercel.json
+
+
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}
+
+
+
+
+
+
