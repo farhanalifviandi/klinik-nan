@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Klinik Iis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">Klinik Iis</div>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
+
+{% block content %}{% endblock %}
+
+<a href="https://wa.me/6281234567890?text=Halo%20saya%20ingin%20konsultasi"
+   class="wa-button"
+   target="_blank">
+   💬 Konsultasi Sekarang
+</a>
+
+</body>
+</html>
